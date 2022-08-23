@@ -12,13 +12,15 @@ The code use PEP8 style.
 
 ### Tech Stack (Dependencies)
 
-<center>**1. Backend Dependencies**</center>
+#### <center>Backend Dependencies</center>
+
 The following are the backend dependencies
- * **virtualenv**: To create an isolated Python environment
- * **SQLAlchemy ORM** to be my ORM library of choice
- * **PostgreSQL** as my database of choice
- * **Python3** and **Flask** as my server language and server framework
- * **Flask-Migrate** for creating and running schema migrations (Creating versions of schemas)
+
+ - virtualenv: To create an isolated Python environment
+ - SQLAlchemy ORM to be my ORM library of choice
+ - PostgreSQL as my database of choice
+ - Python3 and Flask as my server language and server framework
+ - Flask-Migrate for creating and running schema migrations (Creating versions of schemas)
 
 You can download and install all the dependencies mentioned above using `pip` as:
 
@@ -30,7 +32,7 @@ pip install Flask
 pip install Flask-Migrate
 ```
 
-<center>**2. Frontend Dependencies**</center>
+#### <center>Frontend Dependencies</center>
 You must have the **HTML**, **CSS**, and **Javascript** with [Bootstrap 3](https://getbootstrap.com/docs/3.4/customize/) for the website's frontend.
 
 You can install Bootstrap using Node Package Manager (NPM) and if you dont have NPM installed already, you can download and install the [Node.js](https://nodejs.org/en/download/).
@@ -51,7 +53,7 @@ npm install bootstrap@3
 
 ## Main Files: Project Structure
 
-```sh
+```
 ├── README.md
 ├── app.py *** The main driver of the app. Includes your SQLAlchemy models.
                   "python app.py" to run after installing dependencies
@@ -85,11 +87,19 @@ npm install bootstrap@3
 You can either download the repository code or fork and clone the project.
 
 ### Method 1 : Downloading the repository code.
+* Click on `Code` and`Download as zip`
+
+![image](https://user-images.githubusercontent.com/104495751/186272594-325116ad-e426-4509-9af3-a807e9cc2ccb.png)
+____________
 
 ### Method 2 : Forking and cloning the project.
 
 1. **Fork the project**
-2. **Download the project code locally by cloning**
+
+![image](https://user-images.githubusercontent.com/104495751/186272278-5feb2d1d-948b-437d-9188-a81de0413ac5.png)
+__________
+
+2. **Clone the project**
 
    ```
    git clone https://github.com/Ojerinde/Udacity-Fyyur-1.git
@@ -104,25 +114,18 @@ python -m virtualenv env
 
 4. **Activate the environment using**:
 
-source env/bin/activate
+`source env/bin/activate`
 
-```
 **Note** - In Windows, the `env` does not have a `bin` directory. Therefore, you'd use the analogous command shown below:
-```
 
-source env/Scripts/activate
-
-```
+`source env/Scripts/activate`
 
 5. **Install the dependencies**:
-```
 
 pip install -r requirements.txt
 
-```
 6. **Run the development server**:
 ```
-
 export FLASK_APP=myapp
 export FLASK_DEBUG=True # enables debug mode
 flask run
@@ -131,4 +134,4 @@ flask run
 **Note**: For window, change export to set i.e. set FLASK_APP=myapp
 
 7. **Verify on the Browser** by navigating to the default port http://127.0.0.1:5000/
-```
+

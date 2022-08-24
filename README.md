@@ -125,6 +125,13 @@ python -m virtualenv env
 pip install -r requirements.txt
 
 6. **Run the development server**:
+
+If you have the code in the screnshot below in your app.py, all you have to do is to run `python app.py`
+
+![image](https://user-images.githubusercontent.com/104495751/186289098-0803edbd-88a6-4632-b46d-78ab34a9ca20.png)
+
+Else, you run the codes below
+
 ```
 export FLASK_APP=myapp
 export FLASK_DEBUG=True # enables debug mode

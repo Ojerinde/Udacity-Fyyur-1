@@ -25,7 +25,7 @@ The following are the backend dependencies
 You can download and install all the dependencies mentioned above using `pip` as:
 
 ```
-pip install virtualenv
+pip install visrtualenv
 pip install SQLAlchemy
 pip install postgres
 pip install Flask
